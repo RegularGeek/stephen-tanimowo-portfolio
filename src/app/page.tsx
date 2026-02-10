@@ -20,7 +20,8 @@ function Stat({ label, value }: { label: string; value: string }) {
 }
 
 export default async function Home() {
-  const repos = await fetchRepos("RegularGeek");
+  const repos = await fetchRepos();
+
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
